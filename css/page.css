@@ -10,6 +10,7 @@ BODY
  BGCOLOR="#FFFFFF" text="black" link="white" alink="white" vlink="white" ;
  font-family: Verdana; font-size: 10pt;
  background-color: #FFFFFF
+ margins:0;
 }
 
 a:link		{ color: black; }
