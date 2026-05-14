@@ -13,74 +13,87 @@
 
 var akpics = [
 /*
-akaikoshistickerscollection#1
-akaikoshistickerscollection#2
-akaikoshistickerscollection#3
-akaikoshistickerscollection#4
-akaikoshistickerscollection#5
-cyberpunk77cracktro
-demoszeneis100%stark
-familycut
-folwersandbooks
-hiddenlevel
-holytrinity
-rainbowlogo
-sillyventurehappy25th
-superneonicvstheverynastywickedbees
-theholytrinity - 1 - le con.p8
-theholytrinity - 2 - la brute
-theholytrinity - 3 - le truand
-theholytrinity
+["Distribution of Wealth", "Atari ST - 320x200 pixels - 16 colours", 
+"17 May 2026", "Outline 2026", "Atari ST/STe Graphics Compo",
+270
+], 
+
+["akaikoshi Stickers Collection #5", "Atari ST - 320x200 pixels - 16 colours",
+"17 May 2026", "Outline 2026", "Atari ST Graphics Compo",
+270
 ], 
 */
-["Distribution of Wealth", "akaikoshi", "5 May 2026",
-"Outline 2026", "Atari ST Gaphics Compo", "",
-"Atari ST - 320x200 pixels - 16 colours",
-"",
-"#592C63"
-], 
-["akaikoshi Stickers Collection #5", "akaikoshi", "5 May 2026",
-"Outline 2026", "Atari ST Gaphics Compo", "",
-"Atari ST - 320x200 pixels - 16 colours",
-"",
-"#592C63"
-], 
 
-["akaikoshi Stickers Collection #4", "akaikoshi", "2 August 2025",
-"Silly Venture 2025", "Atari ST Gaphics Compo", "",
-"Atari ST - 320x200 pixels - 16 colours",
-"",
-"#592C63"
-], 
-
-["Flowers and Books", "akaikoshi", "2 August 2025",
-"Silly Venture 2025", "Atari ST Gaphics Compo", "",
-"Atari ST - 320x200 pixels - 16 colours",
-"",
-"#592C63"
+["Welcome To Monkey Highlands", "Atari ST - 320x274 pixels - 16 colours",
+"23 August 2025", "Original drawing", "",
+274
 ],
 
-["Grüsse Vom Planet Irata", "akaikoshi", "2 August 2025",
-"Silly Venture", "Atari XL/XE Gaphics Compo", "",
-"Atari ST - 160x200 pixels - 28 colours",
-"",
-"#592C63"
+["akaikoshi Stickers Collection #4", "Atari ST - 320x200 pixels - 16 colours",
+"2 August 2025", "3rd place @ Silly Venture 2025", "Atari ST Graphics Compo",
+270
+], 
+
+["Flowers and Books", "Atari ST - 320x200 pixels - 16 colours",
+"2 August 2025", "4th place @ Silly Venture 2025", "Atari ST Graphics Compo",
+270
 ],
 
-["Hidden level", "akaikoshi", "2 August 2025",
-"Silly Venture 2025", "Atari XL/XE ATASCII Compo", "",
-"Atari XL - 40x25 chars- 2 colours",
-"",
-"#592C63"
+["Grüsse Vom Planet Irata", "Atari 8bit - 160x200 pixels - 28 colours",
+"2 August 2025", "2nd place @ Silly Venture", "Atari XL/XE Graphics Compo",
+270
 ],
 
+["Hidden level", "Atari XL - 40x25 chars- 2 colours",
+"2 August 2025", "2nd place @ Silly Venture 2025", "Atari XL/XE ATASCII Compo",
+270
+],
 
-["akaikoshi Stickers Collection #3", "akaikoshi", "5 May 2026",
-"Outline 2025", "Atari ST Gaphics Compo", "",
-"Atari ST - 320x200 pixels - 16 colours",
-"",
-"#592C63"
-]
+["akaikoshi Stickers Collection #3", "Atari ST - 320x200 pixels - 16 colours",
+"5 July 2025","3rd place @ Sommarhack 2025", "Lowres Graphics Compo",
+270
+],
+
+["Super-Neonic vs. The Very Nasty Wicked Bees", "Atari ST - 320x200 pixels - 16 colours",
+"5 July 2025","4th place @ Shadow Party 2025", "Oldschool Graphics Compo",
+270
+],
+
+["DEMOSZENE IST 100% STARK", "MacIntosh - 512x384 pixels - monochrome",
+"5 July 2025","3rd place @ Shadow Party 2025", "Sticker Compo",
+382
+],
+
+["akaikoshi Stickers Collection #2", "Atari ST - 320x200 pixels - 16 colours",
+"5 July 2025","8th place @ Shadow Party 2025", "Wild Compo",
+270
+],
+
+["The Holy Trinity", "Pico-8 - 3x20x32 chars - 16 colours",
+"5 July 2025","1st place @ Shadow Party 2025", "Textmode Graphics Compo",
+204
+],
+
+["akaikoshi Stickers Collection #1", "Atari ST - 320x200 pixels - 16 colours", 
+"30 May 2025", "2nd place @ Outline 2025", "Atari ST/STe Graphics Compo",
+270
+],
+
+["Family Cut", "Atari ST - 320x200 pixels - 16 colours", 
+"April 2025", "original drawing", "",
+270
+],
+
+["Sunny Girl", "Pico-8 ASCII - 32x20 chars - 16 colours", 
+"April 2025", "original drawing", "",
+204
+],
+
+["Cyberpunk 77 Cracktro", "Atari ST - 320x200 pixels - 16 colours", 
+"30 May 2025", "Buxton Bytes 2025", "Fantasy Cracktro Challenge",
+270
+],
+
 
 ];
 
@@ -99,31 +112,22 @@ start_page(4, "big pixels", "" );
 	for( i=0; i<nbpics; i++ )
 	{
 		var picdata = akpics[i];
-		var name = picdata[0];
-		var imgname = format(name.toLowerCase());
+		var imgname = format(picdata[0].toLowerCase());
 		
-		document.write( "<tr><TD align=left><BR>&nbsp; <font size=4 color=grey><I>"+picdata[2]+"<TD><TD>");
-		document.write( "<tr bgcolor=#EEEEEE height=2><TD><TD><TD>" );
+		//date
+		document.write( "<tr><TD align=><h2>&nbsp; "+picdata[2]);
+		document.write( "<tr height=2 bgcolor=#EEEEEE><TD>");
+		document.write( "<tr height=2><TD align=center>");
+		document.write( "<img src='pixels/" + imgname + ".png' height="+picdata[5]+" >" );
 
-		text = "<h1><b>"+ name +"</B></font></A>";
+		document.write( "<h2><b>"+ picdata[0] +"</B><font size=2><font size=2>" );
 		
-		// groupe -----------------------------------------------
-		if(picdata[1]!==""){ text += "<BR><font size=2>by " + picdata[1]; }
-		
-		// blank line -----------------------------------------------
-		text += "<P>&nbsp;";
-
 		// party -----------------------------------------------
-		if(picdata[3]!==""){ text += "<BR><B>"+ picdata[3]+" " + picdata[4]+ "</B> "; }
+		if(picdata[1]!==""){ document.write( "<BR>( " + picdata[1] +" )" ); }
 		
-		//TAGS
-		if(picdata[6]!==""){ text += "<P>- <I>"+picdata[6]+" -</I>"; }
-
-		  
-		document.write( "<TR valign=top><td align=center>" );
-		 
-		document.write( "<img src='pixels/" + imgname + ".png' height=540 >" );
-		document.write( "</A><BR>" + text +"</TD></TR>" );
+		// party -----------------------------------------------
+		if(picdata[3]!==""){ document.write( "<P><B>"+ picdata[3]+" " + picdata[4]+ "</B> "); }
+		
 	}
    
 	document.write( "</table>" );
