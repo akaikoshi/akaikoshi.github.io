@@ -17,14 +17,16 @@ a:link		{ color: black; }
 a:visited	{ color: #000000; }
 a:hover		{ color: red; }
 a:active	{ color: white; }
-a		     	{ text-decoration: none }
+a		    { text-decoration: none }
 
-h1 { font-family: monospace; font-size: 10pt;  font-weight:normal; color: #000000;}
-h2 { font-family: monospace; font-size: 10pt;  font-weight:bold; color: #000000;}
-h3 { font-family: monospace; font-size: 11pt;  font-weight:bold; color: #000000;}
-h4 { font-family: monospace; font-size: 12pt;  font-weight:normal; color: #000000;}
-h5 { font-family: monospace; font-size: 12pt;  font-weight:bold; color: #000000;}
-h6 { font-family: monospace; font-size: 8pt;  font-weight:normal; color: #000000;}
+h1 { font-family: system-ui; font-size: 10pt;  font-weight:normal; color: #000000;}
+h2 { font-family: system-ui; font-size: 10pt;  font-weight:bold; color: #000000;}
+h3 { font-family: system-ui; font-size: 11pt;  font-weight:bold; color: #000000;}
+h4 { font-family: system-ui; font-size: 18pt;  font-weight:normal; color: #AAAAAA;}
+h5 { font-family: system-ui; font-size: 32pt;  font-weight:normal; color: #AAAAAA;}
+
+/* h6 : menu */
+h6 { font-family: monospace; font-size: 10pt;  font-weight:normal; color: #000000;}
 
 form 	   { margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px}
 input 	 { background-color: #e5e5e5; border: #000000; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
