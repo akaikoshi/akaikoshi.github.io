@@ -12,8 +12,11 @@
 
 var ak_news = [
 
-"12 may 2026| welcome on akaikoshi new website - hope you'll like it :-)</A>",
+"14 may 2026| akaikoshi sent three entries @ Outline 2026 - have a look to the 'pixels' folder",
 
+"12 may 2026| akaikoshi's new website launched - hope you'll like it :-)",
+
+"10 may 2026| akaikoshi released three intros @ Buxton Bytes 2026 - look at them in the 'demos' folder",
 "",
 "",
 "",
@@ -42,8 +45,7 @@ start_page(2, "news", "" );
 	else
 	{
 		var n = ak_news[i].split('|');
-		if (i==0) {  document.write( "<B>" + n[0] +"</B><P> - " + n[1]); }
-		else      {  document.write( "<B>" + n[0] +"</B><P>- " + n[1] + "<P><hr><P></P>" ); }
+		document.write( "<P><B>" + n[0] +"</B><P> &nbsp; - &nbsp; " + n[1]);
 	}
   }
   
