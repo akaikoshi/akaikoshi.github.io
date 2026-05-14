@@ -1,16 +1,8 @@
 BODY 
 {
- scrollbar-face-color:#6E7A88;
- scrollbar-shadow-color:#6E7A88;
- scrollbar-highlight-color:#6E7A88;
- scrollbar-3dlight-color:#FFFFFF;
- scrollbar-darkshadow-color:#000000;
- scrollbar-track-color:#373D44;
- scrollbar-arrow-color:#FFFFFF;
- BGCOLOR="#FFFFFF" text="black" link="white" alink="white" vlink="white" ;
- font-family: Verdana; font-size: 10pt;
- background-color: #FFFFFF
- margins:0;
+ font-family: system-ui;
+ font-size: 10pt;
+ margin:0;
 }
 
 a:link		{ color: black; }
@@ -19,9 +11,9 @@ a:hover		{ color: red; }
 a:active	{ color: white; }
 a		    { text-decoration: none }
 
-h1 { font-family: system-ui; font-size: 10pt;  font-weight:normal; color: #000000;}
-h2 { font-family: system-ui; font-size: 10pt;  font-weight:bold; color: #000000;}
-h3 { font-family: system-ui; font-size: 11pt;  font-weight:bold; color: #000000;}
+h1 { font-family: system-ui; font-size: 12pt;  font-weight:normal; color: #000000;}
+h2 { font-family: system-ui; font-size: 12pt;  font-weight:normal; color: #AAAAAA;}
+h3 { font-family: system-ui; font-size: 12pt;  font-weight:bold; color: #000000;}
 h4 { font-family: system-ui; font-size: 18pt;  font-weight:normal; color: #AAAAAA;}
 h5 { font-family: system-ui; font-size: 32pt;  font-weight:normal; color: #AAAAAA;}
 

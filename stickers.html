@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <HTML>
 
 <HEAD>
@@ -7,45 +8,16 @@
 	<SCRIPT type="text/javascript" src="lib/ak.js"></SCRIPT>
 </HEAD>
 
-<script>
- // start_page_ST();
-</script>
-
-<script>
- // empty_line();
-</script>
-
-<!-- ---- BODY ---- -->
-
-<BODY>
-<center>
-<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%> 
-		
-<tr height=100 background="img/bandeau.jpg" >
-	<td colspan=3>
-	</td>
-</tr>
-
-<tr valign=top>
-	<td bgcolor=#EEEEEE width=200>
-		
-	<script>
-	print_menu(5); 
-	</script>
-
-</td>
-        
-<!--
-<td bgcolor=#FFFFFF width=20>
-</td>
+<SCRIPT>
+	
+<!-- 
+//------------------------------------------------------------------------------
+// ---- BODY ----
+//------------------------------------------------------------------------------
 -->
-        
-<td bgcolor=white>
-<h1>
-<TABLE border=0 width=100% cellpadding=0 cellspacing=0>
-<TR bgcolor=#b6dada>
-<TD><h1><center>
-<script>
+
+start_page(5, "stickers obsession", "" );
+
   var i, idx;
   for (i=0; i<68 ; i++ )
   {
@@ -53,14 +25,15 @@
 	else if (i<100) { idx="0"+(i+1); }
 	else { idx=i+1; }
     document.write( "<a href='stickers/asc_"+idx+".png'><img src='stickers/asc_"+idx+".png' width=320></A>" );
-    //if ((i%3)==2) { document.write( "<p>&nbsp;"); }
   }
-</script>
 
-</TABLE>
-
-<script>
 end_page(); 
-</script>
 
-<HTML>
+<!-- 
+//------------------------------------------------------------------------------
+// ---- END OF PAGE ----
+//------------------------------------------------------------------------------
+-->
+
+</SCRIPT>
+</HTML>

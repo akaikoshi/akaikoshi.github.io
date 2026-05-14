@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <HTML>
 
 <HEAD>
@@ -39,7 +38,7 @@ var akpics = [
 270
 ],
 
-["Grüsse Vom Planet Irata", "Atari 8bit - 160x200 pixels - 28 colours",
+["Grusse Vom Planet Irata", "Atari 8bit - 160x200 pixels - 28 colours",
 "2 August 2025", "2nd place @ Silly Venture", "Atari XL/XE Graphics Compo",
 270
 ],
@@ -59,9 +58,9 @@ var akpics = [
 270
 ],
 
-["DEMOSZENE IST 100% STARK", "MacIntosh - 512x384 pixels - monochrome",
+["DEMOSZENE IST 100% STARK", "MacIntosh - 512x342 pixels - monochrome",
 "5 July 2025","3rd place @ Shadow Party 2025", "Sticker Compo",
-382
+342
 ],
 
 ["akaikoshi Stickers Collection #2", "Atari ST - 320x200 pixels - 16 colours",
@@ -92,8 +91,7 @@ var akpics = [
 ["Cyberpunk 77 Cracktro", "Atari ST - 320x200 pixels - 16 colours", 
 "30 May 2025", "Buxton Bytes 2025", "Fantasy Cracktro Challenge",
 270
-],
-
+]
 
 ];
 
@@ -103,7 +101,7 @@ var akpics = [
 //------------------------------------------------------------------------------
 -->
 
-start_page(4, "big pixels", "" );
+start_page(4, "pixels", "" );
 
 	var i, nbpics = akpics.length;
 
@@ -112,7 +110,7 @@ start_page(4, "big pixels", "" );
 	for( i=0; i<nbpics; i++ )
 	{
 		var picdata = akpics[i];
-		var imgname = format(picdata[0].toLowerCase());
+		var imgname = formatfilename(picdata[0].toLowerCase());
 		
 		//date
 		document.write( "<tr><TD align=><h2>&nbsp; "+picdata[2]);
@@ -126,7 +124,7 @@ start_page(4, "big pixels", "" );
 		if(picdata[1]!==""){ document.write( "<BR>( " + picdata[1] +" )" ); }
 		
 		// party -----------------------------------------------
-		if(picdata[3]!==""){ document.write( "<P><B>"+ picdata[3]+" " + picdata[4]+ "</B> "); }
+		if(picdata[3]!==""){ document.write( "<P><B>"+ picdata[3]+"</B> : " + picdata[4]+ "</B> "); }
 		
 	}
    
@@ -134,21 +132,5 @@ start_page(4, "big pixels", "" );
  
 end_page(); 
 
-<!-- 
-//------------------------------------------------------------------------------
-// ---- END OF PAGE ----
-//------------------------------------------------------------------------------
--->
-
-function format( _text )
-{
-	var text = _text;
-	text = text.replaceAll( "ç" , "c" );
-	text = text.replaceAll( "ü" , "u" );
-	text = text.replaceAll( /[éèë]/ig , "e" );
-	text = text.replaceAll( /[ \.\-\'\#^:!?()+@]/ig , "" );
-	return text;
-}
-
-</script>
-                      
+</SCRIPT>
+</HTML>
