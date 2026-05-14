@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <HTML>
 
 <HEAD>
@@ -5,56 +7,144 @@
 	<TITLE>akaikoshi : pixels</TITLE>
 	<LINK href="./css/page.css" rel="stylesheet"></LINK>
 	<SCRIPT type="text/javascript" src="lib/ak.js"></SCRIPT>
-	<SCRIPT type="text/javascript" src="lib/_news.js"></SCRIPT>   
 </HEAD>
 
-<!-- ---- BODY ---- -->
+<SCRIPT>
 
-<BODY>
-<center>
-<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%> 
+var akpics = [
+/*
+akaikoshistickerscollection#1
+akaikoshistickerscollection#2
+akaikoshistickerscollection#3
+akaikoshistickerscollection#4
+akaikoshistickerscollection#5
+cyberpunk77cracktro
+demoszeneis100%stark
+familycut
+folwersandbooks
+hiddenlevel
+holytrinity
+rainbowlogo
+sillyventurehappy25th
+superneonicvstheverynastywickedbees
+theholytrinity - 1 - le con.p8
+theholytrinity - 2 - la brute
+theholytrinity - 3 - le truand
+theholytrinity
+], 
+*/
+["Distribution of Wealth", "akaikoshi", "5 May 2026",
+"Outline 2026", "Atari ST Gaphics Compo", "",
+"Atari ST - 320x200 pixels - 16 colours",
+"",
+"#592C63"
+], 
+["akaikoshi Stickers Collection #5", "akaikoshi", "5 May 2026",
+"Outline 2026", "Atari ST Gaphics Compo", "",
+"Atari ST - 320x200 pixels - 16 colours",
+"",
+"#592C63"
+], 
+
+["akaikoshi Stickers Collection #4", "akaikoshi", "2 August 2025",
+"Silly Venture 2025", "Atari ST Gaphics Compo", "",
+"Atari ST - 320x200 pixels - 16 colours",
+"",
+"#592C63"
+], 
+
+["Flowers and Books", "akaikoshi", "2 August 2025",
+"Silly Venture 2025", "Atari ST Gaphics Compo", "",
+"Atari ST - 320x200 pixels - 16 colours",
+"",
+"#592C63"
+],
+
+["Grüsse Vom Planet Irata", "akaikoshi", "2 August 2025",
+"Silly Venture", "Atari XL/XE Gaphics Compo", "",
+"Atari ST - 160x200 pixels - 28 colours",
+"",
+"#592C63"
+],
+
+["Hidden level", "akaikoshi", "2 August 2025",
+"Silly Venture 2025", "Atari XL/XE ATASCII Compo", "",
+"Atari XL - 40x25 chars- 2 colours",
+"",
+"#592C63"
+],
+
+
+["akaikoshi Stickers Collection #3", "akaikoshi", "5 May 2026",
+"Outline 2025", "Atari ST Gaphics Compo", "",
+"Atari ST - 320x200 pixels - 16 colours",
+"",
+"#592C63"
+]
+
+];
+
+<!-- 
+//------------------------------------------------------------------------------
+// ---- BODY ----
+//------------------------------------------------------------------------------
+-->
+
+start_page(4, "big pixels", "" );
+
+	var i, nbpics = akpics.length;
+
+	document.write( "<table width=100% border=0 cellspacing=0 cellpadding=0>" );
+
+	for( i=0; i<nbpics; i++ )
+	{
+		var picdata = akpics[i];
+		var name = picdata[0];
+		var imgname = format(name.toLowerCase());
 		
-<tr height=100 background="img/bandeau.jpg" >
-	<td colspan=3>
-	</td>
-</tr>
+		document.write( "<tr><TD align=left><BR>&nbsp; <font size=4 color=grey><I>"+picdata[2]+"<TD><TD>");
+		document.write( "<tr bgcolor=#EEEEEE height=2><TD><TD><TD>" );
 
-<tr valign=top>
-	<td bgcolor=#EEEEEE width=200>
+		text = "<h1><b>"+ name +"</B></font></A>";
 		
-	<script>
-	print_menu(4); 
-	</script>
+		// groupe -----------------------------------------------
+		if(picdata[1]!==""){ text += "<BR><font size=2>by " + picdata[1]; }
+		
+		// blank line -----------------------------------------------
+		text += "<P>&nbsp;";
 
-</td>
-        
-<td bgcolor=#FFFFFF width=20>
-</td>
-        
-<td bgcolor=white>
-<h1>
-	
-&nbsp;<P/>
-&nbsp;<P/>
-&nbsp;<P/>
+		// party -----------------------------------------------
+		if(picdata[3]!==""){ text += "<BR><B>"+ picdata[3]+" " + picdata[4]+ "</B> "; }
+		
+		//TAGS
+		if(picdata[6]!==""){ text += "<P>- <I>"+picdata[6]+" -</I>"; }
 
-<TABLE border=0 width=100% cellpadding=0 cellspacing=0>
-<TR>
-<TD><h1>
-<h1>
-&nbsp;<P/>
-&nbsp;<P/>
-&nbsp;<P/>
-<p><I>- page in construction</strong></p>
-</TD></TR>
-</TABLE>
-
-&nbsp;<P/>
-&nbsp;<P/>
-&nbsp;<P/>
-
-<script>
+		  
+		document.write( "<TR valign=top><td align=center>" );
+		 
+		document.write( "<img src='pixels/" + imgname + ".png' height=540 >" );
+		document.write( "</A><BR>" + text +"</TD></TR>" );
+	}
+   
+	document.write( "</table>" );
+ 
 end_page(); 
-</script>
 
-<HTML>
+<!-- 
+//------------------------------------------------------------------------------
+// ---- END OF PAGE ----
+//------------------------------------------------------------------------------
+-->
+
+function format( _text )
+{
+	var text = _text;
+	text = text.replaceAll( "ç" , "c" );
+	text = text.replaceAll( "ü" , "u" );
+	text = text.replaceAll( /[éèë]/ig , "e" );
+	text = text.replaceAll( /[ \.\-\'\#^:!?()+@]/ig , "" );
+	return text;
+}
+
+</script>
+                      
