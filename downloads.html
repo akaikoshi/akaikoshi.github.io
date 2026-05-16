@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+	<META charset="utf-8">
+	<TITLE>akaikoshi : downloads</TITLE>
+	<LINK href="./css/page.css" rel="stylesheet"></LINK>
+	<SCRIPT type="text/javascript" src="lib/ak.js"></SCRIPT>
+</HEAD>
+
+<SCRIPT>
+
+var akdownloads = [
+/*
+"akaikoshi stickers collection (5 plates)|Atari ST disc with .PI1 pictures <I>(.ST format)</I> - may 2026 |asc.zip|",
+*/
+"Welcome to Monkey Island|Atari ST intro <I>(.ST format)</I> - may 2026 |highlands.zip|",
+
+"Do You Wanna Funk?|Atari ST sample disk <I>(.ST format)</I> - may 2026|funk.zip|",
+
+"Promises of a better future|Atari ST sample disk <I>(.ST format)</I> - may 2026|rouge.zip|",
+
+"Buxton Bytes 2025 HD poster|(3942x2548 pixels) <I>(.PNG format)</I> - april 2025|Buxton Bytes 2025 - FCC - poster.png|downloads/Buxton Bytes 2025 - FCC - poster.png",
+
+"Cyberpunk 77 Cracktro|Atari ST fantasy cracktro <I>(.ST format)</I> - march 2025|c77.zip|",
+
+"A-lagolf Cracktro|Atari ST fantasy cracktro <I>(.ST format)</I> - march 2025 |alagolf.zip|",
+
+"","","",""
+
+];
+
+<!-- 
+//------------------------------------------------------------------------------
+// ---- BODY ----
+//------------------------------------------------------------------------------
+-->
+
+start_page(7, "downloads", "" );
+
+  var i;
+
+ document.write ("<h2>");
+ 
+  for (i=0; i<akdownloads.length-1 ; i++ )
+  {
+	if (akdownloads[i]==="")
+	{
+		document.write("<P>&nbsp;");
+	}
+	else
+	{
+		var n = akdownloads[i].split('|');
+		var icon = (n[3]==="")?"img/floppy.jpg":n[3];
+		document.write( "<P>" );
+		document.write( "<table width=100% border=0 cellpadding=0 cellspacing=0><tr valign=center><td width=100 align=center>" );
+		document.write( "<a href='downloads/"+n[2]+"' title='download "+n[0]+"' target=_blank><img src='"+icon+"' border=0 height=64></a>" );
+		document.write( "<td> &nbsp; <B>" + n[0] +"</B> : " + n[1] );
+		document.write( "</td></tr></table>" );
+	}
+  }
+  
+end_page(); 
+
+</SCRIPT>
+</HTML>
+
