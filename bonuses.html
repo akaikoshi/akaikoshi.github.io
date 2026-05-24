@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+	<META charset="utf-8">
+	<TITLE>akaikoshi : bonuses</TITLE>
+	<LINK href="./css/page.css" rel="stylesheet"></LINK>
+	<SCRIPT type="text/javascript" src="lib/ak.js"></SCRIPT>
+</HEAD>
+
+<SCRIPT>
+
+var akdownloads = [
+
+"akaikoshi discs labels - ASCII|some '<I>ready to print</I>' Atari ST 3.5\" disc labels<I> (.pdf format) </I> - may 2026 |akaikoshi disc labels - ascii.pdf|",
+"akaikoshi discs labels - PIXELS|some '<I>ready to print</I>' Atari ST 3.5\" disc labels<I> (.pdf format) </I> - may 2026 |akaikoshi disc labels - pixels.pdf|",
+
+"","","","",
+
+"akaikoshi disc box : Welcome to Monkey Highlands|Atari ST 3.5\" disc ready to print box<I> (.pdf format) </I> - may 2026 |akaikoshi disc box highlands.pdf|bonuses/discbox.jpg",
+"akaikoshi disc box : Stickers Slideshow|Atari ST 3.5\" discs labels ready to print box<I> (.pdf format) </I> - may 2026 |akaikoshi disc box stickers collection.pdf|bonuses/discbox.jpg",
+"akaikoshi disc box : Do You Wanna Funk ?|Atari ST 3.5\" discs labels ready to print box<I> (.pdf format) </I> - may 2026 |akaikoshi disc box do you wanna funk.pdf|bonuses/discbox.jpg",
+"akaikoshi disc box : Cyberpunk 2077|Atari ST 3.5\" discs labels ready to print box<I> (.pdf format) </I> - may 2026 |akaikoshi disc box cyberpunk 77.pdf|bonuses/discbox.jpg",
+
+"","","",""
+
+];
+
+<!-- 
+//------------------------------------------------------------------------------
+// ---- BODY ----
+//------------------------------------------------------------------------------
+-->
+
+start_page(8, "bonuses", "you like 3.5\" floppy discs - so do we - here are some <I>ready to print</I> material to pump-up your akaikoshi discs collection" );
+
+  var i;
+
+ document.write ("<h2>");
+ 
+  for (i=0; i<akdownloads.length-1 ; i++ )
+  {
+	if (akdownloads[i]==="")
+	{
+		document.write("<P>&nbsp;");
+	}
+	else
+	{
+		var n = akdownloads[i].split('|');
+		var icon = (n[3]==="")?"img/floppy.jpg":n[3];
+		document.write( "<P>" );
+		document.write( "<table width=100% border=0 cellpadding=0 cellspacing=0><tr valign=center><td width=100 align=center>" );
+		document.write( "<a href='bonuses/"+n[2]+"' title='download "+n[0]+"' target=_blank><img src='"+icon+"' border=0 height=64></a>" );
+		document.write( "<td> &nbsp; <B>" + n[0] +"</B> : " + n[1] );
+		document.write( "</td></tr></table>" );
+	}
+  }
+  
+end_page(); 
+
+</SCRIPT>
+</HTML>
+
