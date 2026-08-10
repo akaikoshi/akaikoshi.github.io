@@ -1,131 +1,2 @@
-<!DOCTYPE html>
-<HTML>
-
-<HEAD>
-	<meta name="referrer" content="strict-origin-when-cross-origin">
-	<META charset="utf-8">
-	<TITLE>akaikoshi : demos & cracktros</TITLE>
-	<LINK href="./css/page.css" rel="stylesheet"></LINK>
-	<SCRIPT type="text/javascript" src="lib/ak.js"></SCRIPT>
-</HEAD>
-
-<script>
-
-var akdemos = [
-
-["Nano Boing", "akaikoshi", "11 july 2026",
-"Impulse 2026", "Sizecoding Showcase", "",
-"nanojammer #256bytes",
-"https://morgan3d.github.io/nano/index.html?code=MQOwhiD2BWYLYAIBCB5AkgOQOIEIA0ATAFABmAvAHQAMArICPAROJA-AM5kCMVALAFxWlIAJwQBPADwcCADiIISwhAA9JMuQgCWZJQFpWAbmhlRAagA+3aaw0h5ZnQE4H+gEZlWARyEAXABQaAPQITaCCASnEAZip9ODIAY0hWX2gAehkw-QAHVgBTPyU8UTwXZgB2E19AKGJ-VLgTAioSMNSOADZAaGITKrS4Vs6wgFICXikdHF8lACpRQfawzNKc-MnHIrxfAGsyLIBzFd0HIoWTKS2APgcF-iJWHTICX18SQekI7jCdDiI6QbbIyRsSAAVxAABNfARImF+EA", "",
-"code: #592C63"
-], 
-
-["Cosmic Nugget", "akaikoshi", "11 july 2026",
-"Impulse 2026", "Sizecoding Showcase", "",
-"nanojammer #256bytes",
-"https://morgan3d.github.io/nano/index.html?code=MQOwhiD2BWYLYAIDCA5ANAJgFADMC8AdAIyAjwLpAE4ICeAPERgBxYI6UIAe9TLCAlng4BaAGwAWANzQ81UZIAmeAM4BHCgBcAFHwBUfANTQd0AJQSAbnjh95mqHyUBTTQGY0BDB31K+IVu4xqfQBjSCV-HBN9AF60AAY0IjMAazx5HXkAejE43IkAByctDjRqNE15Whc4-UZzEwB+AAslc00PcwD9TSIheoA9QHVCdwBWfU6SoMiALha2gkYhD0A+4DRktZ0eoU0MIhx9Ily4zPlAKiIXDE0wdQhtNFN9ESiCER8QdpHIjJMAUiIRTJEMQmEFAA", "",
-"code: #592C63"
-], 
-
-["Old's Cool", "akaikoshi", "3 july 2026",
-"Shadow Party 2026", "Fantasy Console Demos Compo", "",
-"nanojammer #256bytes",
-"https://morgan3d.github.io/nano/index.html?code=MQOwhiD2BWYLYAIDyBhANAZgFBwLwDYAWAbgAsCBjSAZwAoAzXAOgEZAR4AEoBqOLeyAE4IAngB4ATLwQVcpagDdaTAOxcmABha1SAWmEcOxACa4WAelrCdpQ9FyAoYiMAqYV3qBoYiwJ+QgB4SpBABLB2daXx04LgAOaiCQJQBWegN3YgAHagBTABdwtGE0S1EbAH4KAC5xWlogrmgOAFJxbha+QQQAa1EWfFoWLjiE1hSOLzBcKIx8IYY1DE7DACNcQi5xQio6Qnp5xeMBMAB3fsS0MDRdaJ0ltBZEwyNDk-vzy-XCHSYMW4wOIA", "391388",
-"code: #592C63"
-], 
-
-["Welcome To Monkey Highlands", "akaikoshi", "10 may 2026",
-"Buxton Bytes 2026", "Atari ST/STe Interesting Scrolltext Competition", "",
-"GFAbasic #stoptrump",
-"EA2UIzvOvVk", "391388",
-"music: Dubmood - code+gfx: #592C63"
-], 
-
-["Do You Wanna Funk", "akaikoshi", "10 may 2026",
-"Buxton Bytes 2026", "Atari ST/STe Sample Disk Competition", "",
-"GFAbasic #funk",
-"z7sdZefQbxI", "391376",
-"music: Patrick  Cowley feet. Sylvester - code+gfx: #592C63"
-], 
-
-["Promises of a Better Future", "akaikoshi", "10 may 2026",
-"Buxton Bytes 2026", "Atari ST/STe Sample Disk Competition", "",
-"GFAbasic #antifa",
-"X9VlwjUfzn8", "391379",
-"music: Berurier Noir - code+gfx: #592C63"
-], 
-
-["BBQ is resistance !", "akaikoshi", "5 July 2025",
-"3rd @ Shadow Party 2025", "Fantasy Console Competition", "",
-"nanojammer #256bytes",
-"15z_IN46tu8", "374526",
-"code+gfx: #592C63"
-], 
-
-["A-Lagolf Cracktro", "akaikoshi", "16 march 2025",
-"Buxton Bytes 2025", "Atari ST/STe Fantasy Cracktro Challenge", "",
-"GFAbasic #antifa",
-"tjr0VO4A73o", "369925",
-"music: #40E0D0 - code+gfx: #592C63"
-], 
-
-["Cyberpunk 2077 Cracktro", "akaikoshi", "16 march 2025",
-"Buxton Bytes 2025", "Atari ST/STe Fantasy Cracktro Challenge", "",
-"GFAbasic",
-"FQQiR-gDn8w", "369926",
-"music: #40E0D0 - code+gfx: #592C63"
-]
-
-];
-
-<!-- 
-//------------------------------------------------------------------------------
-// ---- BODY ----
-//------------------------------------------------------------------------------
--->
-
-start_page(3, "demos, intros & sizecoding", "" );
-
-var i, nbdemos = akdemos.length;
-
-document.write( "<table width=100% border=0 cellspacing=0 cellpadding=0>" );
-
-	for( j=i=0; i<nbdemos; i++ )
-	{
-		var demodata = akdemos[i];
-		var name = demodata[0];
-
-		var demozoo = "https://demozoo.org/productions/"+demodata[8];
-		var youtube = ((demodata[7].length==11) ? "https://www.youtube.com/watch?v=":"")+demodata[7];
-		var imgname = formatfilename(name.toLowerCase());
-		var imagelink= (youtube!=="") ? "<a href='"+youtube+"' target='_blank' title='view in youtube'>" : "";
-
-		document.write( "<tr><TD align=><h2>&nbsp; "+demodata[2]); // date
-		document.write( "<tr height=2 bgcolor=#EEEEEE><TD>");     // gray line
-
-		document.write( "<tr><TD align=center>");
-		document.write( imagelink+"<img src='demos/" + imgname + ".png' height=270></A>");
-		document.write( "<h2><B><a href='"+demozoo+"' target='_blank' title='view in demozoo'>" + name +"</B></font></A><font size=2>" );
-
-		// credits -----------------------------------------------
-		if (demodata[9]!=="") { document.write( "<P>"+ demodata[9] ); }
-
-		// party & compo -----------------------------------------------
-		if (demodata[3]!=="") { document.write( "<P><B>"+ demodata[3]+"</B> : " + demodata[4]+ "</B> "); }
-
-		//TAGS
-		if (demodata[6]!=="") { document.write( "<P><I>#"+ demodata[6] ); }
-	}
-
-	document.write( "</table>" );
- 
-end_page(); 
-
-<!-- 
-//------------------------------------------------------------------------------
-// ---- END OF PAGE ----
-//------------------------------------------------------------------------------
--->
-
-</SCRIPT>
-</HTML>
+<!DOCTYPE html><HTML><HEAD>	<meta name="referrer" content="strict-origin-when-cross-origin">	<META charset="utf-8">	<TITLE>akaikoshi : demos & cracktros</TITLE>	<LINK href="./css/page.css" rel="stylesheet"></LINK>	<SCRIPT type="text/javascript" src="lib/ak.js"></SCRIPT></HEAD><script>var akdemos = [["Nano Boing", "akaikoshi", "11 july 2026","Impulse 2026", "Sizecoding Showcase", "","nanojammer #256bytes","https://morgan3d.github.io/nano/index.html?code=MQOwhiD2BWYLYAIBCB5AkgOQOIEIA0ATAFABmAvAHQAMArICPAROJA-AM5kCMVALAFxWlIAJwQBPADwcCADiIISwhAA9JMuQgCWZJQFpWAbmhlRAagA+3aaw0h5ZnQE4H+gEZlWARyEAXABQaAPQITaCCASnEAZip9ODIAY0hWX2gAehkw-QAHVgBTPyU8UTwXZgB2E19AKGJ-VLgTAioSMNSOADZAaGITKrS4Vs6wgFICXikdHF8lACpRQfawzNKc-MnHIrxfAGsyLIBzFd0HIoWTKS2APgcF-iJWHTICX18SQekI7jCdDiI6QbbIyRsSAAVxAABNfARImF+EA", "","code: #592C63"], ["Cosmic Nugget", "akaikoshi", "11 july 2026","Impulse 2026", "Sizecoding Showcase", "","nanojammer #256bytes","https://morgan3d.github.io/nano/index.html?code=MQOwhiD2BWYLYAIDCA5ANAJgFADMC8AdAIyAjwLpAE4ICeAPERgBxYI6UIAe9TLCAlng4BaAGwAWANzQ81UZIAmeAM4BHCgBcAFHwBUfANTQd0AJQSAbnjh95mqHyUBTTQGY0BDB31K+IVu4xqfQBjSCV-HBN9AF60AAY0IjMAazx5HXkAejE43IkAByctDjRqNE15Whc4-UZzEwB+AAslc00PcwD9TSIheoA9QHVCdwBWfU6SoMiALha2gkYhD0A+4DRktZ0eoU0MIhx9Ily4zPlAKiIXDE0wdQhtNFN9ESiCER8QdpHIjJMAUiIRTJEMQmEFAA", "","code: #592C63"], ["Old's Cool", "akaikoshi", "3 july 2026","Shadow Party 2026", "Fantasy Console Demos Compo", "","nanojammer #256bytes","https://morgan3d.github.io/nano/index.html?code=MQOwhiD2BWYLYAIDyBhANAZgFBwLwDYAWAbgAsCBjSAZwAoAzXAOgEZAR4AEoBqOLeyAE4IAngB4ATLwQVcpagDdaTAOxcmABha1SAWmEcOxACa4WAelrCdpQ9FyAoYiMAqYV3qBoYiwJ+QgB4SpBABLB2daXx04LgAOaiCQJQBWegN3YgAHagBTABdwtGE0S1EbAH4KAC5xWlogrmgOAFJxbha+QQQAa1EWfFoWLjiE1hSOLzBcKIx8IYY1DE7DACNcQi5xQio6Qnp5xeMBMAB3fsS0MDRdaJ0ltBZEwyNDk-vzy-XCHSYMW4wOIA", "391388","code: #592C63"], ["Welcome To Monkey Highlands", "akaikoshi", "10 may 2026","Buxton Bytes 2026", "Atari ST/STe Interesting Scrolltext Competition", "","GFAbasic #stoptrump","EA2UIzvOvVk", "391388","music: Dubmood - code+gfx: #592C63"], ["Do You Wanna Funk", "akaikoshi", "10 may 2026","Buxton Bytes 2026", "Atari ST/STe Sample Disk Competition", "","GFAbasic #funk","z7sdZefQbxI", "391376","music: Patrick  Cowley feet. Sylvester - code+gfx: #592C63"], ["Promises of a Better Future", "akaikoshi", "10 may 2026","Buxton Bytes 2026", "Atari ST/STe Sample Disk Competition", "","GFAbasic #antifa","X9VlwjUfzn8", "391379","music: Berurier Noir - code+gfx: #592C63"], ["BBQ is resistance !", "akaikoshi", "5 July 2025","3rd @ Shadow Party 2025", "Fantasy Console Competition", "","nanojammer #256bytes","15z_IN46tu8", "374526","code+gfx: #592C63"], ["A-Lagolf Cracktro", "akaikoshi", "16 march 2025","Buxton Bytes 2025", "Atari ST/STe Fantasy Cracktro Challenge", "","GFAbasic #antifa","tjr0VO4A73o", "369925","music: #40E0D0 - code+gfx: #592C63"], ["Cyberpunk 2077 Cracktro", "akaikoshi", "16 march 2025","Buxton Bytes 2025", "Atari ST/STe Fantasy Cracktro Challenge", "","GFAbasic","FQQiR-gDn8w", "369926","music: #40E0D0 - code+gfx: #592C63"]];<!-- //------------------------------------------------------------------------------// ---- BODY ----//-------------------------------------------------------------------------------->start_page(3, "demos, intros & sizecoding", "" );
+var i, nbdemos = akdemos.length;document.write( "<table width=100% border=0 cellspacing=0 cellpadding=0>" );	for( j=i=0; i<nbdemos; i++ )	{		var demodata = akdemos[i];		var name = demodata[0];		var demozoo = "https://demozoo.org/productions/"+demodata[8];		var youtube = ((demodata[7].length==11) ? "https://www.youtube.com/watch?v=":"")+demodata[7];		var imgname = formatfilename(name.toLowerCase());		var imagelink= (youtube!=="") ? "<a href='"+youtube+"' target='_blank' title='view in youtube'>" : "";		document.write( "<tr><TD align=><h2>&nbsp; "+demodata[2]); // date		document.write( "<tr height=2 bgcolor=#EEEEEE><TD>");     // gray line		document.write( "<tr><TD align=center>");		document.write( imagelink+"<img src='demos/" + imgname + ".png' height=270></A>");		document.write( "<h2><B><a href='"+demozoo+"' target='_blank' title='view in demozoo'>" + name +"</B></font></A><font size=2>" );		// credits -----------------------------------------------		if (demodata[9]!=="") { document.write( "<P>"+ demodata[9] ); }		// party & compo -----------------------------------------------		if (demodata[3]!=="") { document.write( "<P><B>"+ demodata[3]+"</B> : " + demodata[4]+ "</B> "); }		//TAGS		if (demodata[6]!=="") { document.write( "<P><I>#"+ demodata[6] ); }	}	document.write( "</table>" ); end_page(); <!-- //------------------------------------------------------------------------------// ---- END OF PAGE ----//--------------------------------------------------------------------------------></SCRIPT></HTML>
